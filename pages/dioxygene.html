@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/produit.css">
+</head>
+<body>
+
+    <div class="hamburgerMenu" id="hamburgerMenu">
+        <div id="close">&#10006;</div>
+        <nav>
+            <a href="../index.html" class="accueil"><i class="fa fa-home"></i></a>
+            <a href="listeProduit.html">NOS PRODUITS</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="panier.html">MON PANIER<i class="fa fa-shopping-cart"></i><span class="notif">0</span></a>
+        </nav>
+    </div>
+
+    <div class="notificationAjoutPanier">
+        <div>Cet objet a été ajouté à votre panier</div>
+    </div>
+
+    <div class="containHeader">
+    <header>
+            <a href="../index.html" class="logoEssential">ESSENTIAL</a>
+            <div class="hamburgerButton" id="hamburgerButton">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav>
+                <a href="../index.html" class="accueil"><i class="fa fa-home"></i></a>
+                <a href="listeProduit.html">NOS PRODUITS</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="panier.html">MON PANIER<i class="fa fa-shopping-cart"></i><span class="notif">0</span></a>
+            </nav>
+     </header>
+     </div>
+
+     <main>
+         <div class="containImgDescriptif">
+
+            <section class="containImg">
+                <div class="objectFitImg">
+                    <img src="../images/dioxygene.png" alt="">
+                </div>
+            </section>
+
+            <section class="containDescriptif">
+                <div class="titre">
+                    <h2 class="nomProduit">The O²</h2>
+                </div>
+
+                <div class="containDescriptionProduit">
+                    <div class="descriptionProduit">
+                        <p>
+                            The o², est une molécule mise au point en combinant 2 atomes d'oxygène ensemble.
+                        </p>
+                        <p>
+                            Etant donné que l'air est normalement constitué à 21% d'O², il était important de
+                            vendre ce produit essentiel à 1/4,761904761904762 à votre petit confort personnel.
+                        </p>
+                        <p>Pour ce produit, nous avons mis un système de livraison particulier. Au moment de l'achat
+                            , il vous suffit d'inhalier par vos narines et le produit sera directement à votre domicile. De rien.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prixTitre">
+                    <h2 id="price"></h2>
+                </div>
+
+                <div class="quantityTitre">
+                    <h2>Quantité :</h2>
+                </div>
+
+                <div class="quantity">
+                    <button class="enlever" id="remove">&#8249;</button>
+                    <input type="text" class="nombre" value="1" id="quantity">
+                    <button class="ajouter" id="add">&#8250;</button>
+                </div>
+
+                <div class="bordure"></div>
+
+                <div class="addToCart">
+                    <button class="cart" id="addToCart">Ajouter au panier
+                        <i class="fa fa-shopping-cart"></i>
+                        <div class="overlayCart"><span>&#43;</span></div>
+                    </button>
+                </div>
+
+                <div class="bordure"></div>
+
+
+                <a href="listeProduit.html">
+                    <div class="containAutreProduit">
+                        <div class="autreProduit">
+                            <h2>Nos autres produits <span class="flecheAutreProduit"> &#8250;</span></h2>
+                        </div>
+                    </div>
+                </a>
+
+            </section>
+         </div>
+     </main>
+
+
+     <div class="containFooter">
+        <footer>
+            <p>Nom d'un petit bonhomme que je n'aime pas le CSS.</p>
+            <p>Vous voulez savoir le nombre de lignes de code en CSS pour cette page ? Je vous donne une fourchette, entre 399 et 401. EZ</p>
+        </footer>
+     </div>
+</body>
+<script src="../script/dioxygene.js"></script>
+</html>

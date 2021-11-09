@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root{
+    --darkBlue : #22223b;
+    --blue : #4a4e69;
+    --lightBlue : #9a8c98;
+    --beige : #c9ada7;
+    --white : #f2e9e4;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+input{
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  a:active {
+    color: black;
+  }
+/*************************************/
+
+/*****************HEADER*********************/
+
+.containHeader{
+    background-color: var(--darkBlue);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--darkBlue);
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > .logoEssential{
+    font-family: 'Righteous', cursive;
+    font-size: 4rem;
+    padding: 0.5em;
+    background-color: var(--white);
+    border-radius: 2rem;
+    margin: 0.3em 0 0.3em 0.3em;
+}
+
+.hamburgerButton{
+    display: flex;
+    flex-direction: column;
+    margin : 0 3em 0 auto;
+    cursor: pointer;
+}
+
+.hamburgerButton > div{
+    width: 5rem;
+    height: 0.7rem;
+    margin-bottom: 1em;
+    background-color: var(--lightBlue);
+}
+
+.hamburgerButton > div:last-of-type{
+    margin-bottom: 0;
+}
+
+.hamburgerMenu{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.hamburgerMenu > #close{
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    font-size: 5rem;
+    color: var(--blue);
+    background-color: var(--beige);
+    border-radius: 50%;
+    right: 1rem;
+    top: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hamburgerMenu > nav{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.hamburgerMenu > nav > a{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    background-color: var(--beige);
+    padding: 0.5em 1em;
+    border-radius: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hamburgerMenu > nav > a:hover{
+    box-shadow: 0px 0px 3px 3px #9e8883;
+}
+
+header > nav{
+    display: none;
+    flex-wrap: wrap;
+    margin: 1em 2em 1em auto;
+    justify-content: right;
+    align-items: center;
+}
+header > nav > a{
+    font-size: 1.5rem;
+    background-color: var(--lightBlue);
+    padding: 1em 0.5em;
+    text-align: center;
+    border: 1px solid var(--blue);
+    font-weight: bold;
+}
+
+.accueil{
+    padding: 1em 1.5em 1em 1.5em;
+}
+
+.notif{
+    margin-left: 0.4rem;
+    background-color: #9e746c;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header > nav > a:not(:last-child){
+    border-right: none;
+}
+
+header > nav > a:hover{
+    background-color: #7a7179;
+}
+/***********************MAIN***********************/
+
+.essential{
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+}
+
+.produits{
+    max-width: 100%;
+    min-height: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 90rem;
+    margin: 1rem 0.5rem 0 0.5rem;
+    background-color: #dfccc7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px var(--beige);
+}
+
+main > h1{
+    margin: 0 auto 0 auto;
+    font-family: 'Righteous', cursive;
+    font-size: 4rem;
+    padding: 0.5em;
+    background-color: var(--white);
+    border-radius: 2rem;
+    text-align: center;
+}
+
+main > .descriptifEssential{
+    margin: 1rem auto 5rem auto;
+    max-width: 98%;
+    background-color: rgb(196, 192, 192);
+    box-shadow: 2px 2px 5px 5px rgb(146, 146, 146);
+}
+
+main > .descriptifEssential > p{
+    padding: 0 2em 0 2em;
+    margin: 0.5em 0 0 0;
+    font-size: 1.7rem;
+}
+
+main > .produitPopulaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main > .produitPopulaire > a{
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+    margin: 1rem;
+    width: 40rem;
+    background-color: var(--blue);
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+main > .produitPopulaire > a:hover .containImg > img{
+    transform: scale(1.3) rotateZ(15deg);
+}
+
+main > .produitPopulaire > a:hover{
+    box-shadow: 0px 10px 10px 1px rgb(51, 51, 51);
+}
+
+main > .produitPopulaire > a:hover .buyOurShit{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    font-weight: bold;
+}
+
+.containImg > img{
+    padding: 1rem;
+    transition: all 0.2s;
+}
+
+.containImg{
+    object-fit: contain;
+    width: 200px;
+    background-color: white;
+    margin : 1rem auto 1rem auto;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px 2px rgb(51, 51, 51);
+}
+
+.containTitleProduit{
+    display: flex;
+    justify-content: center;
+}
+
+.containTitleProduit > h2{
+    margin : 0 auto 0 auto;
+    font-family: 'Righteous', cursive;
+    background-color: white;
+    font-size: 2.5rem;
+    padding: 0.5em 1em;
+    text-align: center;
+    border-radius: 4em;
+}
+
+.containDescriptifProduit{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.containDescriptifProduit > .descriptionProduit{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.descriptionProduit > p{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.8rem;
+    padding: 0 1em;
+}
+
+a > .containAutreProduit{
+    display: flex;
+    justify-content: center;
+}
+
+a > .containAutreProduit > .autreProduit{
+    display: flex;
+    flex-direction: column;
+}
+
+a > .containAutreProduit > .autreProduit > h2{
+    font-family: 'Righteous', cursive;
+    background-color: white;
+    font-size: 2.5rem;
+    padding: 0.5em 1em;
+    text-align: center;
+    border-radius: 4em;
+    margin: 0 1rem 0 1rem;
+    position: relative;
+}
+
+a > .containAutreProduit > .autreProduit > h2:hover .flecheAutreProduit{
+    transform: translateX(3px);
+}
+
+.flecheAutreProduit{
+    position: absolute;
+    margin-left: 0.5rem;
+    transition: all 0.2s;
+}
+
+.bordure{
+    width: 100%;
+    height: 5px;
+    background-color: #afa7a3;
+    margin: 1.5rem 0 1.5rem 0;
+}
+/******************************************/
+/********************FOOTER*********************/
+
+.containFooter{
+    margin-top: 1rem;
+    background-color: rgb(31, 31, 31);
+    border-top: 1rem solid rgb(90, 90, 90);
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90rem;
+    background-color: rgb(31, 31, 31);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer > p{
+    max-width: 250px;
+    font-size: 1.5rem;
+    margin: 1rem 2rem 1rem 2rem;
+    color: white;
+    text-align: center;
+}
+
+/***********************************************/
+@media only screen and (min-width: 650px){
+    .hamburgerButton{
+        display: none;
+    }
+
+    header > nav{
+        display: flex;
+    }
+
+}
+
+@media only screen and (min-width: 900px){
+    main{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

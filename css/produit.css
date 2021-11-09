@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root{
+    --darkBlue : #22223b;
+    --blue : #4a4e69;
+    --lightBlue : #9a8c98;
+    --beige : #c9ada7;
+    --white : #f2e9e4;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+input{
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  a:active {
+    color: black;
+  }
+/*************************************/
+
+/*****************HEADER*********************/
+
+.containHeader{
+    background-color: var(--darkBlue);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--darkBlue);
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > .logoEssential{
+    font-family: 'Righteous', cursive;
+    font-size: 4rem;
+    padding: 0.5em;
+    background-color: var(--white);
+    border-radius: 2rem;
+    margin: 0.3em 0 0.3em 0.3em;
+}
+
+.hamburgerButton{
+    display: flex;
+    flex-direction: column;
+    margin : 0 3em 0 auto;
+    cursor: pointer;
+}
+
+.hamburgerButton > div{
+    width: 5rem;
+    height: 0.7rem;
+    margin-bottom: 1em;
+    background-color: var(--lightBlue);
+}
+
+.hamburgerButton > div:last-of-type{
+    margin-bottom: 0;
+}
+
+.hamburgerMenu{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.hamburgerMenu > #close{
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    font-size: 5rem;
+    color: var(--blue);
+    background-color: var(--beige);
+    border-radius: 50%;
+    right: 1rem;
+    top: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hamburgerMenu > nav{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.hamburgerMenu > nav > a{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    background-color: var(--beige);
+    padding: 0.5em 1em;
+    border-radius: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hamburgerMenu > nav > a:hover{
+    box-shadow: 0px 0px 3px 3px #9e8883;
+}
+
+header > nav{
+    display: none;
+    flex-wrap: wrap;
+    margin: 1em 2em 1em auto;
+    justify-content: right;
+    align-items: center;
+}
+header > nav > a{
+    font-size: 1.5rem;
+    background-color: var(--lightBlue);
+    padding: 1em 0.5em;
+    text-align: center;
+    border: 1px solid var(--blue);
+    font-weight: bold;
+}
+
+.accueil{
+    padding: 1em 1.5em 1em 1.5em;
+}
+
+.notif{
+    margin-left: 0.4rem;
+    background-color: #9e746c;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header > nav > a:not(:last-child){
+    border-right: none;
+}
+
+header > nav > a:hover{
+    background-color: #7a7179;
+}
+/***********************MAIN***********************/
+
+.essential{
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+}
+
+.bordure{
+    width: 100%;
+    height: 5px;
+    background-color: #afa7a3;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    max-width: 90rem;
+    margin: 1rem 0.5rem 0 0.5rem;
+    background-color: #dfccc7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px var(--beige);
+}
+
+.containImgDescriptif{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0.5rem;
+}
+.containImgDescriptif > .containDescriptif{
+    flex-basis: 60%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.containDescriptif > .titre{
+    margin-left: 1rem;
+    /*width: 100%;*/ /*avant descriptif*/
+    display: flex;
+}
+
+.containImgDescriptif > .containImg{
+    flex-basis: 40%;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.objectFitImg{
+    object-fit: contain;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.objectFitImg > img{
+    padding: 1rem;
+}
+
+
+.nomProduit{ /*H2*/
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    background-color: white;
+    font-size: 3rem;
+    padding: 0.5em 1em;
+    border-radius: 4em;
+    box-shadow: 2px 2px 5px 5px rgb(146, 146, 146);
+}
+
+.containDescriptionProduit{
+    margin: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.descriptionProduit{
+    display: flex; 
+    flex-direction: column; 
+    background-color: rgb(196, 192, 192);
+    box-shadow: 2px 2px 5px 5px rgb(146, 146, 146);
+    border-radius: 10px;
+    max-width: 85%;
+}
+
+.descriptionProduit > p{
+    font-size: 1.8rem;
+    padding: 0 0.5em 0 0.5em;
+}
+
+.prixTitre{
+    display: flex;
+    border-bottom: 1px solid gray;
+    margin: 1.5rem 1rem 0 1rem;
+}
+
+.prixTitre > h2{
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    background-color: white;
+    font-size: 2rem;
+    padding: 0.2em 0.5em;
+    border-radius: 4em;
+    box-shadow: 2px 2px 5px 5px rgb(146, 146, 146);
+}
+
+.quantityTitre{
+    display: flex;
+    border-bottom: 1px solid gray;
+    margin: 1.5rem 1rem 0 1rem;
+}
+
+.quantityTitre > h2{
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    background-color: white;
+    font-size: 2rem;
+    padding: 0.2em 0.5em;
+    border-radius: 4em;
+    box-shadow: 2px 2px 5px 5px rgb(146, 146, 146);
+}
+
+.quantity{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem 1rem 0 1rem;
+}
+
+.quantity > .enlever,.ajouter{
+    border-style: none;
+    outline: none;
+    font-size: 3rem;
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+
+.quantity > .nombre{
+    outline: none;
+    border-style: none;
+    width: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.addToCart{
+    display: flex;
+    justify-content: center;
+}
+
+.addToCart > .cart{
+    background-color: var(--lightBlue);
+    border-style: none;
+    outline: none;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 4em;
+    overflow: hidden;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.overlayCart{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.4);
+    color: white;
+    font-size: 6rem;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.addToCart > .cart:hover .overlayCart{
+    height: 100%;
+    bottom: 0;
+}
+
+
+a > .containAutreProduit{
+    display: flex;
+    justify-content: center;
+}
+
+a > .containAutreProduit > .autreProduit{
+    display: flex;
+    flex-direction: column;
+}
+
+a > .containAutreProduit > .autreProduit > h2{
+    font-family: 'Righteous', cursive;
+    background-color: white;
+    font-size: 2.5rem;
+    padding: 0.5em 1em;
+    text-align: center;
+    border-radius: 4em;
+    margin: 0 1rem 0 1rem;
+    position: relative;
+}
+
+a > .containAutreProduit > .autreProduit > h2:hover .flecheAutreProduit{
+    transform: translateX(3px);
+}
+
+.flecheAutreProduit{
+    position: absolute;
+    margin-left: 0.5rem;
+    transition: all 0.2s;
+}
+
+.notificationAjoutPanier{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.notificationAjoutPanierAnimation{
+    animation: fadeIn 0.5s;
+}
+
+.notificationAjoutPanier > div{
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    background-color: var(--lightBlue);
+    font-size: 3rem;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+/******************************************/
+/********************FOOTER*********************/
+
+.containFooter{
+    margin-top: 1rem;
+    background-color: rgb(31, 31, 31);
+    border-top: 1rem solid rgb(90, 90, 90);
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90rem;
+    background-color: rgb(31, 31, 31);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer > p{
+    max-width: 250px;
+    font-size: 1.5rem;
+    margin: 1rem 2rem 1rem 2rem;
+    color: white;
+    text-align: center;
+}
+
+/***********************************************/
+@media only screen and (min-width: 650px){
+    .hamburgerButton{
+        display: none;
+    }
+
+    header > nav{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .containImgDescriptif{
+        flex-direction: column;
+    }
+    .containDescriptif{
+        width: 100%;
+    }
+    .containImg{
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .titre{
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .containDescriptionProduit{
+        justify-content: center;
+    }
+
+    .quantity, .quantityTitre, .prixTitre{
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    main{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@keyframes fadeIn{
+    from {top: -100px; opacity: 0;} 
+    to {top: 0; opacity: 1;}
+}

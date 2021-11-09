@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/panier.css">
+</head>
+<body>
+
+    <div class="hamburgerMenu" id="hamburgerMenu">
+        <div id="close">&#10006;</div>
+        <nav>
+            <a href="../index.html" class="accueil"><i class="fa fa-home"></i></a>
+            <a href="listeProduit.html">NOS PRODUITS</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="#">MON PANIER<i class="fa fa-shopping-cart"></i><span class="notif">0</span></a>
+        </nav>
+    </div>
+
+    <!---------------------------------------------->
+    <div class="detailPanier" id="detailPanier">
+        <div id="closeDetailPanier">&#10006;</div>
+        <nav>
+            <div class="nomProduitPanierDetail">Nom du produit : Botel</div>
+            <div class="quantiteProduitPanierDetail">Quantité : 15</div>
+            <!--<span id="editDetailPanier">&#9998;</span>-->
+            <div class="prixProduitPanierDetail">Prix/U : 3.99€</div>
+            <div class="totalProduitPanierDetail">Total : 15*1785</div>
+        </nav>
+    </div>
+    <!------------------------------------------------------->
+
+    <div class="containHeader">
+    <header>
+            <a href="../index.html" class="logoEssential">ESSENTIAL</a>
+            <div class="hamburgerButton" id="hamburgerButton">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav>
+                <a href="../index.html" class="accueil"><i class="fa fa-home"></i></a>
+                <a href="listeProduit.html">NOS PRODUITS</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="#">MON PANIER<i class="fa fa-shopping-cart"></i><span class="notif">0</span></a>
+            </nav>
+     </header>
+     </div>
+
+     <main>
+        <h2>Mon panier <i class="fa fa-shopping-basket" aria-hidden="true"></i></h2> 
+        <!-- TRASH <i class="fa fa-trash" aria-hidden="true"></i> -->
+
+        <div class="containPanier" id="containPanier">
+
+            <!--<div class="item">
+                <img src="../images/bottle.png" alt="bouteille">
+                <h3 class="nomProduitPanier">The botel</h3>
+
+                    <button class="remove">&#8249;</button>
+                    <input type="text" class="quantiteProduitPanier" value="1">
+                    <button class="add">&#8250;</button>
+
+                <section class="prixProduitPanier">prix/U</section>
+                <section class="totalProduitPanier">total</section>
+
+                <span class="info">&#8505;</span>
+                <span class="delete">&#10006;</span>
+            </div>-->
+            <div class="panierVide">
+                <a href="listeProduit.html">Votre panier est vide.. N'hésitez pas à découvrir nos produits en cliquant ici!</a>
+            </div>
+        </div>
+
+        <div class="totalContenuPanier">
+            <h2>Total de votre panier: 15€</h2> <i class="fa fa-credit-card-alt" aria-hidden="true" id="payerContenuPanier"></i>
+        </div>
+
+     </main>
+
+
+     <div class="containFooter">
+        <footer>
+            <p>Nom d'un petit bonhomme que je n'aime pas le CSS.</p>
+            <p>J'y ai mis toutes mes larmes et ma sueur, SELF-ALIGN DISPLAY FLEX *PTSD* WEEEEE  ┻━┻ ︵ ＼\('0')/／ ︵ ┻━┻  ʕ•ᴥ•ʔ ᕕ( ᐛ )ᕗ
+                ᕕ( ᐕ )ᕗ Le footer n'est pas tout en basᐠ( ᐛ )ᐟ (𝒟𝓇𝒶𝓌 𝓂𝑒 𝓁𝒾𝓀𝑒 𝑜𝓃𝑒 𝑜𝒻 𝓎𝑜𝓊𝓇 𝒻𝓇𝑒𝓃𝒸𝒽 𝑔𝒾𝓇𝓁𝓈 )> ∠( ᐛ 」∠)＿
+            </p>
+        </footer>
+     </div>
+</body>
+<script src="../script/panier.js"></script>
+</html>
